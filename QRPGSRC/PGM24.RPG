@@ -1,0 +1,19 @@
+     FOMAPPL1 IF  E           K        DISK
+     FOMCNVL1 IF  E           K        DISK
+     FOMDMPL1 IF  E           K        DISK
+     FOMEODL1 IF  E           K        DISK
+     FOMERDL1 IF  E           K        DISK
+     FOMEROL1 IF  E           K        DISK
+     FOMERRL1 IF  E           K        DISK
+     C                     READ OMAPPL1                  99
+     C                     READ OMCNVL1                  99
+     C                     READ OMDMPL1                  99
+     C                     READ OMEODL1                  99
+     C                     READ OMERDL1                  99
+     C                     READ OMEROL1                  99
+     C                     READ OMERRL1                  99
+     C                     CALL 'PGM22'
+     C                     CALL 'PGM22'
+     C                     CALL 'PGM23'
+     C                     CALL 'PGM25'
+     C                     SETON                     LR

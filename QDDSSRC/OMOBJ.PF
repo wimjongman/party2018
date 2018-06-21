@@ -1,0 +1,48 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMOBJ                                         *
+      * Function ...: Object file.                                  *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 06-03-1991.                                   *
+      *                                                             *
+      * This file holds all the objects for the specified library   *
+      * list for the production level. This file is used to         *
+      * move objects from and to an environment.                    *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record OMOBJR
+      * ------------------------------------------------------------ *
+                R OMOBJR
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  RJAPPC    R               REFFLD(APPC)
+                  RJPDLC    R               REFFLD(PDLC)
+                  RJOBJC    R               REFFLD(OBJC)
+                  RJOBJL    R               REFFLD(OBJL)
+                  RJOBJT    R               REFFLD(OBJT)
+                  RJOBJA    R               REFFLD(OBJA)
+                  RJOBJD    R               REFFLD(OBJD)
+                  RJSRCF    R               REFFLD(SRCF)
+                  RJSRCL    R               REFFLD(SRCL)
+                  RJSRCM    R               REFFLD(SRCM)
+                  RJSRCS    R               REFFLD(SRCS)
+                  RJSRCX    R               REFFLD(SRCX)
+                  RJOBJX    R               REFFLD(OBJX)
+                  RJOMOD    R               REFFLD(OMOD)
+                  RJOCRT    R               REFFLD(OCRT)
+                  RJFIX#    R               REFFLD(FIX#)
+                  RJUSDF    R               REFFLD(USDF)
+                  RJEXCI    R               REFFLD(EXCI)
+                  RJOCLS    R               REFFLD(OCLS)

@@ -1,0 +1,29 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMPDLL1                                       *
+      * Function ...: Production level description file logical     *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 24-01-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the production level     *
+      * description file.                                           *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMPDL
+      * Record OMPDLR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMPDLR                    PFILE(OMPDL)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * DLAPPC      - Application code
+      * DLPDLC      - Production level code
+      * ------------------------------------------------------------ *
+                K DLAPPC
+                K DLPDLC

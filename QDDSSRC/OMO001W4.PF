@@ -1,0 +1,50 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMO001W4                                      *
+      * Function ...: Object processing workfile                    *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 13-09-1991.                                   *
+      *                                                             *
+      * This file is a workfile of program OMO001.                  *
+      * This workfile contains all objects that are copied or moved *
+      * in the object processing program with a mutation code MUTC. *
+      *                                                             *
+      * MUTC='*ADD'     - Object is added                           *
+      * MUTC='*CHANGE'  - Object is changed                         *
+      * MUTC='*DELETE'  - Object is removed                         *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record OMO001R
+      * ------------------------------------------------------------ *
+                R OMO001R
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  W4JOB#    R               REFFLD(JOB#)
+                  W4PDLC    R               REFFLD(PDLC)
+                  W4OBJC    R               REFFLD(OBJC)
+                  W4OBJL    R               REFFLD(OBJL)
+                  W4OBJT    R               REFFLD(OBJT)
+                  W4MBRC    R               REFFLD(MBRC)
+                  W4RPLC    R               REFFLD(PDLC)
+                  W4ROBC    R               REFFLD(OBJC)
+                  W4ROBL    R               REFFLD(OBJL)
+                  W4ROBT    R               REFFLD(OBJT)
+                  W4MUTC    R               REFFLD(MUTC)
+
+      * ------------------------------------------------------------ *
+      * Key
+      * W4JOB# - Job number
+      * ------------------------------------------------------------ *
+                K W4JOB#

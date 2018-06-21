@@ -1,0 +1,26 @@
+     FDEMOPFL1IF  E           K        DISK
+     F            DEMOPFR                           KRENAMEDEMPFL1
+     FDEMOPF  IF  E           K        DISK
+     F*************************************************************
+     IDEMPFL1
+     I              FDESC                           UDESC
+     I              FVALC                           UVALC
+     C*************************************************************
+     C*
+     C                     READ DEMOPF                   99
+     C*
+     C           FCODE     IFEQ *BLANK
+     C                     MOVE 'TEST'    FDESC
+     C                     ENDIF
+     C*
+     C                     READ DEMOPFL1                 99
+     C*
+     C           FVALC     IFEQ *ZERO
+     C                     MOVE 'TEST'    FCODE
+     C                     MOVE 'DESC'    UDESC
+     C                     ENDIF
+     C*
+     C                     CALL 'PGMFLD'
+     C                     PARM           FVALC
+     C*
+     C                     SETON                     LR

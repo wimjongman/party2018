@@ -1,0 +1,54 @@
+     A* Free Form Menu: HFDMENU
+     A*%%TS  SD  20020731  095829  WIM         REL-V4R4M0  5769-PW1
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+     A                                      CHGINPDFT
+     A                                      INDARA
+     A          R HFDMENU
+     A*%%TS  SD  20020731  095638  WIM         REL-V4R4M0  5769-PW1
+     A                                      DSPMOD(*DS3)
+     A                                      LOCK
+     A                                      SLNO(01)
+     A                                      CLRL(*ALL)
+     A                                      ALWROL
+     A                                      CF03
+     A                                      HELP
+     A                                      HOME
+     A                                      HLPRTN
+     A                                  1  2'HFDMENU'
+     A                                      COLOR(BLU)
+     A                                  1 33'HFDMENU Menu'
+     A                                      DSPATR(HI)
+     A                                  3  2'Select one of the following:'
+     A                                      COLOR(BLU)
+     A                                  5  7'1.'
+     A                                  6  7'2.'
+     A                                  7  7'3.'
+     A                                  8  7'4.'
+     A                                  9  7'5.'
+     A                                 10  7'6.'
+     A                                 11  7'7.'
+     A                                 12  7'8.'
+     A                                 13  7'9.'
+     A                                 14  6'10.'
+     A* CMDPROMPT  Do not delete this DDS spec.
+     A                                019  2'Selection or command              -
+     A                                          '
+     A                                  5 10'Dit'
+     A                                  5 14'is'
+     A                                  5 17'een'
+     A                                  5 21'menu'
+     A          R #H0101
+     A*%%TS  SD  20020731  095638  WIM         REL-V4R4M0  5769-PW1
+     A                                      TEXT('Help for Menu Option 01')
+     A                                      CLRL(*ALL)
+     A                                  1  2'HELP'
+     A                                      COLOR(BLU)
+     A                                  1 29'HOOFDMENU              '
+     A                                      DSPATR(HI)
+     A                                 11 21'U'
+     A                                 11 23'ZOCHT'
+     A                                 11 29'TEVERGEEFS'
+     A                                 11 40'OM'
+     A                                 11 43'HULP'

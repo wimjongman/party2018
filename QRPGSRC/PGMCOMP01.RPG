@@ -1,0 +1,29 @@
+     FOMAPPL1 IF  E           K        DISK
+     FOMCNVL1 IF  E           K        DISK
+     FOMDMPL1 IF  E           K        DISK
+     FOMEODL1 IF  E           K        DISK
+     FOMERDL1 IF  E           K        DISK
+     FOMEROL1 IF  E           K        DISK
+     FOMERRL1 IF  E           K        DISK
+     FDSP01   CF  E                    WORKSTN
+     C                     READ OMAPPL1                  96
+     C                     READ OMCNVL1                  01
+      *read file again
+     C                     READ OMCNVL1                  99
+     C                     READ OMCNVL1                  99
+     C                     READ OMDMPL1                  99
+     C                     READ OMEODL1                  99
+     C                     READ OMERDL1                  98
+     C                     READ OMAPPL1                  98
+     C                     READ OMCNVL1                  99
+     C                     READ OMDMPL1                  99
+     C                     READ OMEODL1                  99
+     C                     READ OMEODL1                  99
+     C                     READ OMERDL1                  99
+     C                     READ OMEROL1                  98
+     C                     READ OMERRL1                  99
+     C                     CALL 'QCMDEXC'
+     C                     CALL 'QUSRTVUS'
+     C                     CALL 'QCMD'
+     C                     EXFMTDSP
+     C                     SETON                     LR

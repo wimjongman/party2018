@@ -1,0 +1,33 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMOBJL6                                       *
+      * Function ...: Object file logical                           *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 17-08-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the object file.         *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMOBJ                                              *
+      * Record OMOBJR                                               *
+      * ----------------------------------------------------------- *
+                R OMOBJR                    PFILE(OMOBJ)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * RJAPPC      - Application code                              *
+      * RJOBJC      - Object code                                   *
+      * RJOBJL      - Object library                                *
+      * RJOBJT      - Object type                                   *
+      * RJOBJA      - Object attribute                              *
+      * ----------------------------------------------------------- *
+                K RJAPPC
+                K RJOBJC
+                K RJOBJL
+                K RJOBJT
+                K RJOBJA

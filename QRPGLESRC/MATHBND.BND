@@ -1,0 +1,6 @@
+             STRPGMEXP  PGMLVL(*CURRENT) SIGNATURE('MYMATH')
+                EXPORT     SYMBOL('ADD')
+                EXPORT     SYMBOL('SUBSTRACT')
+                EXPORT     SYMBOL('MULTIPLY')
+                EXPORT     SYMBOL('DIVIDE')
+             ENDPGMEXP

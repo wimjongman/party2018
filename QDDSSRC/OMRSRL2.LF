@@ -1,0 +1,31 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMRSRL2                                       *
+      * Function ...: FIX/Request Reference file logical            *
+      * Author .....: G. Oei.                                       *
+      * Startdate ..: 22-07-1992.                                   *
+      *                                                             *
+      * This is a logical access path over the Req/FIX reference    *
+      * file.                                                       *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMRSR                                              *
+      * Record OMRSRR                                               *
+      * ----------------------------------------------------------- *
+                                            UNIQUE
+                R OMRSRR                    PFILE(OMRSR)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * SRAPPC      - Application code                              *
+      * SRFIX#      - Fix number                                    *
+      * SRERR#      - Request number                                *
+      * SRRLS#      - Release number                                *
+      * ----------------------------------------------------------- *
+                K SRAPPC
+                K SRFIX#                    DESCEND
+                K SRERR#                    DESCEND

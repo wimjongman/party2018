@@ -1,0 +1,5 @@
+     FOMOBJ   IF  E           K        DISK
+     FOMOW3L1 IF  E           K        DISK
+     C                     READ OMOBJ                    99
+     C                     READ OMOW3L1                  99
+     C                     SETON                     LR

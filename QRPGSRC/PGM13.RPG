@@ -1,0 +1,10 @@
+     FOMOBJL9 IF  E           K        DISK
+     FOMRSR   IF  E           K        DISK
+     FOMSREF  IF  E           K        DISK
+     FOMSYS   IF  E           K        DISK
+     C                     READ OMOBJL9                  99
+     C                     READ OMRSR                    99
+     C                     READ OMSREF                   99
+     C                     READ OMSYS                    99
+     C                     CALL 'QUSLJOB'
+     C                     SETON                     LR

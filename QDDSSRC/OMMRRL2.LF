@@ -1,0 +1,36 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMMRRL2                                       *
+      * Function ...: Member relation file logical                  *
+      * Author .....: G. Oei.                                       *
+      * Startdate ..: 09-06-1992.                                   *
+      *                                                             *
+      * This is a logical access path over the member relation file.*
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMMBR                                              *
+      * Record OMMBRR                                               *
+      * ----------------------------------------------------------- *
+                                            UNIQUE
+                R OMMRRR                    PFILE(OMMRR)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * RROBJC      - File name                                     *
+      * RROBJL      - Library name                                  *
+      * RRMBRC      - Member name                                   *
+      * RROBJC      - Related file name                             *
+      * RROBJL      - Related library name                          *
+      * RRMBRC      - Related member name                           *
+      * ----------------------------------------------------------- *
+                K RRROBC
+                K RRROBL
+                K RRRMBC
+                K RROBJC
+                K RROBJL
+                K RRMBRC

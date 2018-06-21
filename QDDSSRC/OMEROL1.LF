@@ -1,0 +1,36 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMEROL1                                       *
+      * Function ...: Solution file logical                         *
+      * Author .....: G. Oei.                                       *
+      * Startdate ..: 26-06-1992.                                   *
+      *                                                             *
+      * This is a logical access path over the solution file        *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMERO
+      * Record OMEROR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMEROR                    PFILE(OMERO)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * ROAPPC      - Application code
+      * ROFIX#      - Fix number
+      * ROOBJC      - Object code
+      * ROOBJT      - Object type
+      * ROOBJA      - Object attribute
+      * ROMBRC      - Member code
+      * ROPDLC      - Production level code
+      * ------------------------------------------------------------ *
+                K ROAPPC
+                K ROFIX#
+                K ROOBJC
+                K ROOBJT
+                K ROMBRC

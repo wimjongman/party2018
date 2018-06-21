@@ -1,0 +1,10 @@
+      *$$\CRTOM CRTPF
+      *$$\ENDOM
+                R RECORD1
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  VELD1         10A         COLHDG('ACHTERNAAM')
+                  VELD2         10A         COLHDG('VOORNAAM')
+                  VELD3         10A         COLHDG('FL.-')
+

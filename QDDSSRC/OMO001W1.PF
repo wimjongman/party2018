@@ -1,0 +1,40 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMO001W1                                      *
+      * Function ...: Object processing workfile                    *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 23-06-1991.                                   *
+      *                                                             *
+      * This file is a workfile of program OMO001.                  *
+      * This program is used to collect logicals from physicals in  *
+      * case a logical must be recreated during object processing.  *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record OMCNMR
+      * ------------------------------------------------------------ *
+                R OMO001R
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  W1LF      R               REFFLD(OBJC)
+                  W1LFL     R               REFFLD(LIBC)
+                  W1SRCL    R               REFFLD(SRCL)
+                  W1SRCF    R               REFFLD(SRCF)
+                  W1SRCM    R               REFFLD(SRCM)
+
+      * ------------------------------------------------------------ *
+      * Key
+      * ------------------------------------------------------------ *
+                K W1LFL
+                K W1LF

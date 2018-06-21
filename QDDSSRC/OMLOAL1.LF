@@ -1,0 +1,35 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMLOAL1                                       *
+      * Function ...: Library list object attribute file logical    *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 06-03-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the library list object  *
+      * attribute file.                                             *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMLOA
+      * Record OMLOAR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMLOAR                    PFILE(OMLOA)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * OAAPPC      - Application code
+      * OAPDLC      - Production level code
+      * OASEQ#      - Sequence number
+      * OALSQ#      - Library list sequence number
+      * OATSQ#      - Object type sequence number
+      * ------------------------------------------------------------ *
+                K OAAPPC
+                K OAPDLC
+                K OASEQ#
+                K OALSQ#
+                K OATSQ#

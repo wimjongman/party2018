@@ -1,0 +1,34 @@
+      *$$\CRTOM CRTLF
+      *$$\ENDOM
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMLOGL1                                       *
+      * Function ...: Log file logical.                             *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 20-11-1991.                                   *
+      *                                                             *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMLOG
+      * Record OMLOGR
+      * ------------------------------------------------------------ *
+                R OMLOGR                    PFILE(OMLOG)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * OGAPPC      - Application code
+      * OGINDT      - Income date
+      * OGJOB#      - Job number
+      * OGJOBN      - Job name (because of logging object transfer)
+      * OGUSID      - User     (because of logging object transfer)
+      * ------------------------------------------------------------ *
+                K OGAPPC
+                K OGINDT                    DESCEND
+                K OGJOB#                    DESCEND
+                K OGJOBN                    DESCEND
+                K OGUSID                    DESCEND

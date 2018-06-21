@@ -1,0 +1,29 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMRELL1                                       *
+      * Function ...: Object relation file logical                  *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 20-03-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the object relation file *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMREL                                              *
+      * Record OMRELR                                               *
+      * ----------------------------------------------------------- *
+                R OMRELR                    PFILE(OMREL)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * ELOBJC      - Object code                                   *
+      * ELOBJL      - Object library                                *
+      * ELOBJT      - Object type                                   *
+      * ----------------------------------------------------------- *
+                K ELOBJC
+                K ELOBJL
+                K ELOBJT

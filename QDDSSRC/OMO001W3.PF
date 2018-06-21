@@ -1,0 +1,64 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMO001W3                                      *
+      * Function ...: Object processing workfile                    *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 12-09-1991.                                   *
+      *                                                             *
+      * This file is a workfile of program OMO001.                  *
+      * This workfile contains all objects that are copied or moved *
+      * in the object processing program.                           *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record OMO001R
+      * ------------------------------------------------------------ *
+                R OMO001R
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  W3JOB#    R               REFFLD(JOB#)
+                  W3APPC    R               REFFLD(APPC)
+                  W3OPTI         1A         TEXT('''M''=Move ''C''=Copy       ')
+                  W3FIX#    R               REFFLD(FIX#)
+                  W3FRPL    R               REFFLD(PDLC)
+                                            TEXT('From production level')
+                  W3TOPL    R               REFFLD(PDLC)
+                                            TEXT('To production level  ')
+                  W3SEQ#    R               REFFLD(LSQ#)
+                  W3OBJC    R               REFFLD(OBJC)
+                  W3MBRC    R               REFFLD(MBRC)
+                  W3FROL    R               REFFLD(OBJL)
+                                            TEXT('From object library  ')
+                  W3OBJT    R               REFFLD(OBJT)
+                  W3OBJA    R               REFFLD(OBJA)
+                  W3TOOL    R               REFFLD(OBJL)
+                                            TEXT('To object library    ')
+                  W3SRCL    R               REFFLD(SRCL)
+                  W3SRCF    R               REFFLD(SRCF)
+                  W3SRCM    R               REFFLD(SRCM)
+                  W3FSRL    R               REFFLD(SRCL)
+                  W3FSRF    R               REFFLD(SRCF)
+                  W3FSRM    R               REFFLD(SRCM)
+                  W3LBLT    R               REFFLD(LBLT)
+                  W3CNVT    R               REFFLD(CNVT)
+                  W3PGMN    R               REFFLD(PGMN)
+                  W3PGML    R               REFFLD(PGML)
+                  W3ROBC    R               REFFLD(ROBC)
+                  W3OCLS    R               REFFLD(OCLS)
+                  W3EXCI    R               REFFLD(EXCI)
+                  W3SRCP    R               REFFLD(SRCP)
+                  W3SRCS    R               REFFLD(SRCS)
+                  W3SRCX    R               REFFLD(SRCX)
+                  W3OBJX    R               REFFLD(OBJX)
+                  W3STAT    R               REFFLD(STAT)

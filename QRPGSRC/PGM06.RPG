@@ -1,0 +1,20 @@
+     FOMMRRL2 IF  E           K        DISK
+     FOMOBJL2 IF  E           K        DISK
+     FOMPDLL2 IF  E           K        DISK
+     FOMPWHL1 IF  E           K        DISK
+     FOMRELL1 IF  E           K        DISK
+     FOMRSRJ1 IF  E           K        DISK
+     FOMSEQL1 IF  E           K        DISK
+     C/COPY V51DEV/QCPYSRC,DUMMY
+     C                     READ OMMRRL2                  99
+     C                     READ OMOBJL2                  99
+     C                     READ OMPDLL2                  99
+     C                     READ OMPWHL1                  99
+     C                     READ OMRELL1                  99
+     C                     READ OMRSRJ1                  99
+     C                     READ OMSEQL1                  99
+     C                     CALL 'PGM08'
+     C                     CALL 'PGM09'
+     C                     MOVEL'PGM10'   W#PGMN 10
+     C                     CALL W#PGMN
+     C                     SETON                     LR

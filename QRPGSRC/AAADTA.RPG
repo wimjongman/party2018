@@ -1,0 +1,7 @@
+     C                     MOVE *BLANKS   TEST    5
+     C                     MOVEL'WIMLIB ' NAAM   20
+     C                     MOVE 'AANAAM'  NAAM
+     C           *NAMVAR   DEFN NAAM      TEST
+     C                     IN   TEST
+     C                     OUT  TEST
+     C                     SETON                     LR

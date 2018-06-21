@@ -1,0 +1,16 @@
+     FOMOBJL6 IF  E           K        DISK
+     FOMRSRJ6 IF  E           K        DISK
+     FOMLBL   IF  E           K        DISK
+     FOMLOA   IF  E           K        DISK
+     FOMLOG   IF  E           K        DISK
+     FOMMBR   IF  E           K        DISK
+     FOMMRR   IF  E           K        DISK
+     C                     READ OMOBJL6                  99
+     C                     READ OMRSRJ6                  99
+     C                     READ OMLBL                    99
+     C                     READ OMLOA                    99
+     C                     READ OMLOG                    99
+     C                     READ OMMBR                    99
+     C                     READ OMMRR                    99
+     C                     CALL 'QUSLJOB'
+     C                     SETON                     LR

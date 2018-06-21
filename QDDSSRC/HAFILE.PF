@@ -1,0 +1,36 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMREL                                         *
+      * Function ...: Object relation file.                         *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 20-03-1991.                                   *
+      *                                                             *
+      * This file holds the relation records between objects in an  *
+      * application.                                                *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record OMRELR
+      * ------------------------------------------------------------ *
+                R OMRELR
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  ELOBJC    R               REFFLD(OBJC)
+                  ELOBJL    R               REFFLD(OBJL)
+                  ELOBJT    R               REFFLD(OBJT)
+                  ELROBC    R               REFFLD(ROBC)
+                  ELROBL    R               REFFLD(ROBL)
+                  ELROBT    R               REFFLD(ROBT)
+                  ELRMBC    R               REFFLD(RMBC)
+                  ELUSDF    R               REFFLD(USDF)

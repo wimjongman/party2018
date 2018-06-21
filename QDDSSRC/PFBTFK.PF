@@ -1,0 +1,34 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      *                                                             *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * ------------------------------------------------------------ *
+                R PFBTFKR
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  AFAPPC    R               REFFLD(APPC)
+                  AFADDR    R               REFFLD(ADDR)
+                  AFDEVC    R               REFFLD(DEVC)
+                  AFFJBD    R               REFFLD(FJBD)
+                  AFFJBL    R               REFFLD(FJBL)
+                  AFSJBD    R               REFFLD(SJBD)
+                  AFSJBL    R               REFFLD(SJBL)
+                  AFSADI    R               REFFLD(SADI)
+                  AFSEDI    R               REFFLD(SEDI)
+                  AFSRCP    R               REFFLD(SRCP)
+                  AFMONI    R               REFFLD(MONI)
+                  AFMDEI    R               REFFLD(MDEI)
+                  AFMEXI    R               REFFLD(MEXI)

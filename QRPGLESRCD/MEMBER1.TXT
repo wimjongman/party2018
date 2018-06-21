@@ -1,0 +1,7 @@
+      /DEFINE MEMBER1
+
+     dOMS_sndmsg       PR
+     dmsgf                           10    value
+     dmsgid                           7    value
+     dmsgtype                        10    value
+     dmsgdta                        512    value

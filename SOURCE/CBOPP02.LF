@@ -1,0 +1,150 @@
+     A                                      UNIQUE
+     A          R CBOPPR1                   PFILE(CBOPP)
+     A            CBOPPPSTSCR
+     A            CBOPPKORD#R
+     A            CBOPPKVLG#R
+     A            CBOPPDEBC R
+     A            CBOPPORDSCR
+     A            CBOPPDORDDR
+     A            CBOPPKORDOR
+     A            CBOPPPRIOCR
+     A            CBOPPKNUM#R
+     A            CBOPPKNAANR
+     A            CBOPPBTWCCR
+     A            CBOPPBTWN#R
+     A            CBOPPSTRANR
+     A            CBOPPHUIA#R
+     A            CBOPPBUSA#R
+     A            CBOPPPSTACR
+     A            CBOPPPLTANR
+     A            CBOPPLANACR
+     A            CBOPPLANANR
+     A            CBOPPTELANR
+     A            CBOPPGSMA#R
+     A            CBOPPFAXA#R
+     A            CBOPPEMAANR
+     A            CBOPPSTRLNR
+     A            CBOPPHUIL#R
+     A            CBOPPBUSL#R
+     A            CBOPPPSTLCR
+     A            CBOPPPLTLNR
+     A            CBOPPLANLCR
+     A            CBOPPLANLNR
+     A            CBOPPTELLNR
+     A            CBOPPGSML#R
+     A            CBOPPFAXL#R
+     A            CBOPPEMALNR
+     A            CBOPPCLEVCR
+     A            CBOPPSLVDCR
+     A            CBOPPBDLVDR
+     A            CBOPPEDLVDR
+     A            CBOPPBTLVUR
+     A            CBOPPETLVUR
+     A            CBOPPHER1CR
+     A            CBOPPHER2CR
+     A            CBOPPHER3CR
+     A            CBOPPHER4CR
+     A            CBOPPHER5CR
+     A            CBOPPHER6CR
+     A            CBOPPHER7CR
+     A            CBOPPOREF#R
+     A            CBOPPKORT$R
+     A            CBOPPAANB$R
+     A            CBOPPBETL$R
+     A            CBOPPBANK#R
+     A            CBOPPBETWCR
+     A            CBOPPBETK#R
+     A            CBOPPVERVDR
+     A            CBOPPD050DR
+     A            CBOPPD150DR
+     A            CBOPPD220DR
+     A            CBOPPD300DR
+     A            CBOPPD800DR
+     A            CBOPPD900DR
+     A            CBOPPMUTD R
+     A            CBOPPINFOBR
+     A            CBOPPINFOLR
+     A            CBOPPINFOAR
+      *
+     A          K CBOPPPSTSC                DESCEND
+     A          K CBOPPBDLVD
+     A          K CBOPPDEBC
+     A          K CBOPPKORD#
+     A          K CBOPPKVLG#
+      ****************************************************************
+     A          R CBOPPR2                   PFILE(CBOPP)
+     A            CBOPPPSTSCR
+     A            CBOPPKORD#R
+     A            CBOPPKVLG#R
+     A            CBOPPDEBC R
+     A            CBOPPORDSCR
+     A            CBOPPDORDDR
+     A            CBOPPKORDOR
+     A            CBOPPPRIOCR
+     A            CBOPPKNUM#R
+     A            CBOPPKNAANR
+     A            CBOPPBTWCCR
+     A            CBOPPBTWN#R
+     A            CBOPPSTRANR
+     A            CBOPPHUIA#R
+     A            CBOPPBUSA#R
+     A            CBOPPPSTACR
+     A            CBOPPPLTANR
+     A            CBOPPLANACR
+     A            CBOPPLANANR
+     A            CBOPPTELANR
+     A            CBOPPGSMA#R
+     A            CBOPPFAXA#R
+     A            CBOPPEMAANR
+     A            CBOPPSTRLNR
+     A            CBOPPHUIL#R
+     A            CBOPPBUSL#R
+     A            CBOPPPSTLCR
+     A            CBOPPPLTLNR
+     A            CBOPPLANLCR
+     A            CBOPPLANLNR
+     A            CBOPPTELLNR
+     A            CBOPPGSML#R
+     A            CBOPPFAXL#R
+     A            CBOPPEMALNR
+     A            CBOPPCLEVCR
+     A            CBOPPSLVDCR
+     A            CBOPPBDLVDR
+     A            CBOPPEDLVDR
+     A            CBOPPBTLVUR
+     A            CBOPPETLVUR
+     A            CBOPPHER1CR
+     A            CBOPPHER2CR
+     A            CBOPPHER3CR
+     A            CBOPPHER4CR
+     A            CBOPPHER5CR
+     A            CBOPPHER6CR
+     A            CBOPPHER7CR
+     A            CBOPPOREF#R
+     A            CBOPPKORT$R
+     A            CBOPPAANB$R
+     A            CBOPPBETL$R
+     A            CBOPPBANK#R
+     A            CBOPPBETWCR
+     A            CBOPPBETK#R
+     A            CBOPPVERVDR
+     A            CBOPPD050DR
+     A            CBOPPD150DR
+     A            CBOPPD220DR
+     A            CBOPPD300DR
+     A            CBOPPD800DR
+     A            CBOPPD900DR
+     A            CBOPPMUTD R
+     A            CBOPPINFOBR
+     A            CBOPPINFOLR
+     A            CBOPPINFOAR
+      *
+     A          K *NONE
+     A          K *NONE
+     A          K CBOPPDEBC
+     A          K *NONE
+     A          K *NONE
+     A          K CBOPPPSTSC                DESCEND
+     A          K CBOPPBDLVD
+     A          K CBOPPKORD#
+     A          K CBOPPKVLG#

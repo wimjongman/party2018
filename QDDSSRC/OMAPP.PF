@@ -1,0 +1,41 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMAPP                                         *
+      * Function ...: Application file.                             *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 16-01-1991.                                   *
+      *                                                             *
+      * This file holds the application code and the application    *
+      * description. Also the error manager is pointed here.        *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record OMAPPR
+      * ------------------------------------------------------------ *
+                R OMAPPR
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  PPAPPC    R               REFFLD(APPC)
+                  PPAPNM    R               REFFLD(APNM)
+                  PPERPR    R               REFFLD(ERPR)
+                  PPDMPL    R               REFFLD(DMPL)
+                  PPGL4N    R               REFFLD(GL4N)
+                  PPSRCI    R               REFFLD(INDI)
+                  PPCRLS    R               REFFLD(RLS#)
+                  PPCERR    R               REFFLD(ERR#)
+                  PPIERR    R               REFFLD(INCR)
+                  PPCFIX    R               REFFLD(FIX#)
+                  PPIFIX    R               REFFLD(INCR)
+                  PPCNVS    R               REFFLD(CNVS)
+                  PPFREE    R               REFFLD(FREE)

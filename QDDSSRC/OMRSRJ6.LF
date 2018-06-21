@@ -1,0 +1,46 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMRSRJ1                                       *
+      * Function ...: Request/Fix Reference -- Fix Join Logical     *
+      * Author .....: G. Oei.                                       *
+      * Startdate ..: 14-07-1992.                                   *
+      *                                                             *
+      * This is a Join Log access  over the Req/Fix reference File  *
+      * and the Fix File.                                           *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMRSR OMERS                                        *
+      * Record OMRSRR  OMERSR                                       *
+      * ----------------------------------------------------------- *
+     A          R OMRSRR                    JFILE(OMRSR OMERS)
+     A          J                           JOIN(OMRSR OMERS)
+     A                                      JFLD(SRAPPC RSAPPC)
+     A                                      JFLD(SRFIX# RSFIX#)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * SRAPPC      - Application code                              *
+      * SRFIX#      - Fix nummer                                    *
+      * SRREQ#      - Request number                                *
+      * ----------------------------------------------------------- *
+     A            SRAPPC    R               JREF(OMRSR)
+     A            SRERR#    R               JREF(OMRSR)
+     A            SRFIX#    R               JREF(OMRSR)
+     A            RSRLS#    R               JREF(OMERS)
+     A            RSFIXS    R               JREF(OMERS)
+     A            RSPRIN    R               JREF(OMERS)
+     A            RSPGMR    R               JREF(OMERS)
+     A            RSSTDT    R               JREF(OMERS)
+     A            RSEPDT    R               JREF(OMERS)
+     A            RSERDT    R               JREF(OMERS)
+     A            RSEPH#    R               JREF(OMERS)
+     A            RSERH#    R               JREF(OMERS)
+     A            RSSHSD    R               JREF(OMERS)
+     A          K SRAPPC
+     A          K SRFIX#                    DESCEND
+     A          K SRERR#                    DESCEND
+     A          S RSFIXS                    VALUES('*CMP ')

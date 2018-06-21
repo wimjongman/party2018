@@ -1,0 +1,64 @@
+      *****************************************************************
+      *                                                               *
+      *       RELEASE PROCESSING AID  (RPA)€                         *
+      *                                                               *
+      *  Program:   RPA119 - Source change failure report             *
+      *                                                               *
+      *  Author:    Jurjen D. Oostenveld                              *
+      *  Date:      October 1989                                      *
+      *  Release:   1.1                                               *
+      *                                                               *
+      *    This program reads the source member names (and text) in   *
+      *    RPA108 and prints them in alphabetical order.              *
+      *                                                               *
+      *****************************************************************
+     FRPA108  IF  E           K        DISK
+     FRPA119  O   E             80     PRINTER
+     C           *ENTRY    PLIST
+     C                     PARM           CNYNAM 10
+     C                     PARM           RLSID  10
+     C/EJECT
+     C*****************************************************************
+     C*  R00     Mainline                                             *
+     C*****************************************************************
+     C                     EXSR R91                        Init program
+     C           *IN01     DOWEQ'0'
+     C                     EXSR R80                        Process
+     C                     END
+     C                     EXSR R99                        Close pgm
+     C*****************************************************************
+     C*  R91     Initialize program                                   *
+     C*****************************************************************
+     C           R91       BEGSR
+     C                     READ QLIDOBJD               0101
+     C                     MOVEL'1'       *IN80            Skip page
+     C                     ENDSR
+     C*****************************************************************
+     C*  R80     Check if object exists (object name is unique)       *
+     C*****************************************************************
+     C           R80       BEGSR
+     C                     MOVELODOBNM    MEMBER           Fill line
+     C                     MOVELODOBTX    TEXT
+     C                     EXSR R70                        Print
+     C                     READ QLIDOBJD               0101
+     C           R8099     ENDSR
+     C*****************************************************************
+     C*  R99     Close program                                        *
+     C*****************************************************************
+     C           R99       BEGSR
+     C                     MOVEL'1'       *IN81
+     C                     EXSR R70                        Print
+     C                     MOVEL'1'       *INLR
+     C                     ENDSR
+     C*****************************************************************
+     C*  R70     Standard print routine                               *
+     C*****************************************************************
+     C           R70       BEGSR
+     C           *IN80     IFNE '0'
+     C                     WRITEHDG01                      Header
+     C                     MOVEL'0'       *IN80
+     C                     END
+     C  N81                WRITEDTL01                      Detail
+     C   81                WRITEFTG01                      End of rpt
+     C                     MOVEA*ZERO     *IN,81
+     C           R7099     ENDSR

@@ -1,0 +1,4 @@
+                R SALESR
+                  KEY           10A         TEXT('Key')
+                  KEY2          10A         TEXT('Key2')
+                  KEY3          10A         TEXT('Key3')

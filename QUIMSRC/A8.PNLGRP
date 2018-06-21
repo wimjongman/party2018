@@ -1,0 +1,312 @@
+.*   .............................................................   *.
+.*   : Description                                               :   *.
+.*   :...........................................................:   *.
+.*   :                                                           :   *.
+.*   : Panelgroup .: OMA001                                      :   *.
+.*   : Function ...: Help for OMA001 (Authority maintenance)     :   *.
+.*   : Author .....: W.S. Jongman.                               :   *.
+.*   : Startdate ..: 04 03 1993                                  :   *.
+.*   :                                                           :   *.
+.*   : This panelgroup contains the helptexts for the user       :   *.
+.*   : authority maintenance program                             :   *.
+.*   :                                                           :   *.
+.*   :...........................................................:   *.
+
+:PNLGRP.
+
+.*   .............................................................   *.
+.*   : General help for User authority maintenance               :   *.
+.*   :...........................................................:   *.
+
+:HELP NAME=STRUAM.User Authority Maintenance - Help
+:XH3.Authorisation Maintenance
+:ISCH ROOTS='authority'.User Authority Maintenance
+
+:P.
+The User Authority Maintenance function allows you to maintain the
+functional security for the application you are working with, by
+grouping users into a predefined OMS authorisation class. Users who
+are not authorised to start a specific function receive a message on
+their display.
+Besides the functional security, specific rights can be assigned to
+users per environment (See Environment Maintenance).
+Users belonging to the group *SECOFR or *SECADM, the OMS-manager and
+users with authorisation code 3 are allowed to start this function.
+:EHELP.
+
+.*   .............................................................   *.
+.*   : General help for Display 1                                :   *.
+.*   :...........................................................:   *.
+
+:HELP NAME='OMA00101'.General Help for Display 1
+
+
+:XH3.Display 1 - Work with User Rights
+
+:P.
+:LINK PERFORM='DSPHELP STRUAM'.
+General Information.
+:ELINK.
+
+:P.
+The Work with User Rights display shows the currently authorised
+users, user groups and/or userclasses for the current application with
+their assigned authorisation code. You can add an entry to the list,
+remove an entry from the list or change the assigned authorisation
+code of an entry.
+To select an option, type the option number in the option area and
+press Enter. For more information about an option move the cursor to
+the Option column and press Help. For more information about a function
+key, move the cursor to the function key area and press Help.
+:EHELP.
+
+.*   .............................................................   *.
+.*   : Position to help.                                         :   *.
+.*   :...........................................................:   *.
+
+:HELP NAME='OMA00101/POS'.Position to - Help
+:XH3.Position to
+:P.
+Use this prompt to go to a particular area in the list. Use it for
+quick repositioning of the list, not for creating a subset of the
+list. Enter the following:
+
+:PARML.
+:PT.Name or partial name
+:PD.
+Type the name or partial name of the user, user group or class you
+want to go to in the list. The list of users/classes is positioned
+to the first user/class code beginning with the string specified.
+If no user/class codes exist in the present list, then the list is
+positioned to the item immediately preceding the item you want.
+:EPARML.
+:EHELP.
+
+.*   .............................................................   *.
+.*   : Options.                                                  :   *.
+.*   :...........................................................:   *.
+
+:HELP NAME='OMA00101/OPTI'.Options - Help
+:XH3.Options
+:P.
+Use this column to perform different operations on individual users or
+classes. Type the option number next to an entry and press Enter. You
+can type the same option next to more than one entry at a time, and
+you can also type different options next to different entries at the
+same time.
+
+:PC.
+Choose from the following:
+
+:DL.
+:DT.2=Change
+:DD.
+Type 2 to change the authorisation code of a user, usergroup or
+class.
+
+:DT.4=Delete
+:DD.
+Type 4 to delete the entry from the list.
+:EDL.
+:EHELP.
+
+.*   .............................................................   *.
+.*   : Function keys for Display 1                               :   *.
+.*   :...........................................................:   *.
+
+:HELP NAME='OMA00101/KEYS'.Function Keys - Help
+:XH3.Function Keys
+:PARML.
+:PT.F3=Exit
+:PD.
+Press F3 to end the current task and return to the display
+where you began the task. Any options or changes that you have
+typed on input prompts :CIT.since the last use of the Enter key:ECIT.
+will not be processed.
+
+:PT.F5=Refresh
+:PD.
+Press F5 to rebuild the display from the security
+definitions currently stored in the OMS security file.
+
+:PT.F6=Add
+:PD.
+Press F6 to add a new entry to the list and to enter the
+assigned authorisation code.
+
+:PT.F12=Cancel
+:PD.
+Press F12 to cancel processing and go back to the previous display.
+Any options or changes that you have typed on input prompts
+:CIT.since the last use of the Enter key:ECIT.
+will not be processed.
+:EPARML.
+:EHELP.
+
+.*   .............................................................   *.
+.*   : General help for Display 2                                :   *.
+.*   :...........................................................:   *.
+:HELP NAME='OMA00102'.General Help for Display 2
+
+:XH3.Display 2 - Maintain User Rights
+
+:P.
+:LINK PERFORM='DSPHELP STRUAM'.
+General Information.
+:ELINK.
+
+:P.
+The Maintain User Rights display shows information and allows actions
+depending on the option choosen on the previous display. The choosen
+action on the previous display is shown on line three. The following
+actions can be activated;
+
+:DL.
+:DT.Add
+:DD.
+You can add a new entry definition. The entry code and the
+assigned authorisation code must be entered.
+
+:DT.Change
+:DD.
+You can change the assigned authorisation code of an existing
+entry definition. The current authorisation code is shown.
+The authorisation code can be changed at any time during the
+life cycle of an application.
+
+:DT.Delete
+:DD.
+The current entry and authorisation code is shown, including
+a confirmation message.
+:EDL.
+
+:P.
+For more information about a specific attribute move the cursor to the
+attribute area and press Help.
+:EHELP.
+
+.*   .............................................................   *.
+.*   : Function keys for Display 1                               :   *.
+.*   :...........................................................:   *.
+
+:HELP NAME='OMA00102/USID'.User ID or User Class - Help
+:XH3.User ID or User Class
+:P.
+Use this prompt to enter the name of a user, user group or user class.
+The following rules apply to each entry:
+
+:DL.
+:DT.USER
+:DD.
+Enter a valid name of an existing user profile.
+This is the most detailed level to assign an authorisation code to.
+
+:DT.USER GROUP
+:DD.
+Enter a valid name of an existing user profile. All
+members of this group are implicitly selected.
+Specifications on user level, however, overrules the specifications
+per user group.
+
+:DT.USER CLASS
+:DD.Enter A Valid User Class
+
+:UL.
+:LI.Valid user classes are;
+:UL COMPACT.
+:LI.*SECOFR
+:LI.*SECADM
+:LI.*PGMR
+:LI.*SYSOPR
+:LI.*USER
+:EUL.
+:EUL.
+:EDL.
+:P.
+All users belonging to a specified class are implicitly
+selected. Specifications on group and user level,
+however, overrules the specification per class.
+:EHELP.
+
+.*   .............................................................   *.
+.*   : Authorisation code.                                       :   *.
+.*   :...........................................................:   *.
+
+:HELP NAME='OMA00102/AUTC'.Authorisation code - Help
+:XH3.Authorisation code
+:P.
+Use this prompt to enter a valid predefined OMS authorisation code. An
+authorisation code determines which OMS functions can be executed by
+the connected users. Valid authorisation codes are;
+
+:DL.
+:DT."0"
+:DD.
+No rights at all are assigned to the related users. This
+value is usefull when authorisation codes are assigned
+at group or class level and one single user has to be omitted.
+
+:DT."1"
+:DD.
+Only functions at end user level are allowed to be
+executed. These users are in general able to maintain
+their own user requests and inquire the related Fix information.
+
+:DT."2"
+:DD.
+Code two is specially meant for functions at programmer
+level. They are, in general, allowed to connect objects
+to fixes and start Fix Processing. Specific authorisation
+depends on the assigned rights at environment level.
+
+:DT."3"
+:DD.
+Users with code 3 are application managers and have
+rights for all functions at application level.
+:EDL.
+
+:NT.
+1. See the description per function for a more detailed
+explaination about rights.
+:ENT.
+
+:NT.
+2. Besides these authorisation codes, the request processor, is
+allowed to maintain all requests, fixes and connected
+objects. The request processor is defined in the function
+Application Definition.
+:ENT.
+
+:PC.
+The assigned authorisation code can be changed at any time. A
+previously assigned authorisation code remains in effect for users
+with an active application. These users have to start function Reset
+OMS (Command RESOMS) in order to activate the newly assigned
+authorisation code.
+:EHELP.
+
+.*   .............................................................   *.
+.*   : Screen 2 function keys.                                   :   *.
+.*   :...........................................................:   *.
+
+:HELP NAME='OMA00102/KEYS'.Function keys - Help
+:XH3.Function keys
+:P.
+:PARML.
+:PT.F3=Exit
+:PD.
+Press F3 to end the current task and return to the display
+where you began the task. Any options or changes that you
+keyed on input prompts will not be processed.
+:CIT.Since the last use of the Enter key:ECIT.
+will not be processed.
+
+:PT.F12=Cancel
+:PD.
+Press F12 to cancel processing of any options or changes
+that you have made to the current display,
+:CIT.since the last use of the Enter key:ECIT.
+ and go back to the previous display.
+:EPARML.
+:EHELP.
+:EPNLGRP.

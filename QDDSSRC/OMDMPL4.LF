@@ -1,0 +1,36 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMDMPL4                                       *
+      * Function ...: Dumped sources location file logical          *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 27-09-1992.                                   *
+      *                                                             *
+      * This is a logical access path over the dumped sources file  *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Last in first out.
+      * ------------------------------------------------------------ *
+                                            LIFO
+
+      * ------------------------------------------------------------ *
+      * Physical OMDMP
+      * Record   OMDMPR
+      * ------------------------------------------------------------ *
+                R OMDMPR                    PFILE(OMDMP)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * MPAPPC      - Application code
+      * MPSRCL      - Source library
+      * MPSRCF      - Source file
+      * MPSRCM      - Source member
+      * ------------------------------------------------------------ *
+                K MPAPPC
+                K MPSRCL
+                K MPSRCF
+                K MPSRCM

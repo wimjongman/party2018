@@ -1,0 +1,29 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMAPIL1                                       *
+      * Function ...: Application Priority File.                    *
+      * Author .....: G. Oei.                                       *
+      * Startdate ..: 14-07-1992.                                   *
+      *                                                             *
+      * This is a logical access path over the Application Priority *
+      * file.                                                       *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMAPI                                              *
+      * Record OMAPIR                                               *
+      * ----------------------------------------------------------- *
+                                            UNIQUE
+                R OMAPIR                    PFILE(OMAPI)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * PIAPPC      - Application                                   *
+      * PIPRID      - Priorty default indicator                     *
+      * PIPRIN      - Priorty number                                *
+      * ----------------------------------------------------------- *
+                K PIAPPC
+                K PIPRIN

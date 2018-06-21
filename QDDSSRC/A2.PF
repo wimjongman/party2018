@@ -1,0 +1,14 @@
+                                            REF(OMSREF)
+                R OMRELR
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  ELOBJC    R               REFFLD(OBJC)
+                  ELOBJL    R               REFFLD(OBJL)
+                  ELOBJT    R               REFFLD(OBJT)
+                  ELROBC    R               REFFLD(ROBC)
+                  ELROBL    R               REFFLD(ROBL)
+                  ELROBT    R               REFFLD(ROBT)
+                  ELRMBC    R               REFFLD(RMBC)
+                  ELUSDF    R               REFFLD(USDF)

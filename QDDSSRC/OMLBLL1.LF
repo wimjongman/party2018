@@ -1,0 +1,30 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMLBLL1                                       *
+      * Function ...: Library list file logical                     *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 25-01-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the library list file    *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMLBL
+      * Record OMLBLR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMLBLR                    PFILE(OMLBL)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * BLAPPC      - Application code
+      * BLPDLC      - Production level code
+      * BLSEQ#      - Sequence number
+      * ------------------------------------------------------------ *
+                K BLAPPC
+                K BLPDLC
+                K BLSEQ#

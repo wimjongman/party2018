@@ -1,0 +1,34 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: NEWPF                                         *
+      * Function ...: Application file.                             *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 16-01-1991.                                   *
+      *                                                             *
+      * This file holds the application code and the application    *
+      * description. Also the error manager is pointed here.        *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record NEWPFR
+      * ------------------------------------------------------------ *
+                R NEWPFR
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  WPAPPC    R               REFFLD(APPC)
+                  WPAPNM    R               REFFLD(APNM)
+                  WPERPR    R               REFFLD(ERPR)
+                  WPDMPL    R               REFFLD(DMPL)
+                  WPGL4N    R               REFFLD(GL4N)
+                  WPSRCI    R               REFFLD(INDI)

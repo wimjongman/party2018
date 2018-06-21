@@ -1,0 +1,39 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMERO                                         *
+      * Function ...: Solution File.                                *
+      * Author .....: G. Oei.                                       *
+      * Startdate ..: 26-06-1992.                                   *
+      *                                                             *
+      * This file holds the solution data for a Fix.                *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record OMEROR
+      * ------------------------------------------------------------ *
+                R OMEROR
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  ROAPPC    R               REFFLD(APPC)
+                  ROFIX#    R               REFFLD(FIX#)
+                  ROOBJC    R               REFFLD(OBJC)
+                  ROOBJT    R               REFFLD(OBJT)
+                  ROOBJA    R               REFFLD(OBJA)
+                  ROMBRC    R               REFFLD(MBRC)
+                  ROOBJL    R               REFFLD(OBJL)
+                  ROPDLC    R               REFFLD(PDLC)
+                  ROSRCP    R               REFFLD(SRCP)
+                  ROVRS#    R               REFFLD(VRS#)
+                  ROMOD#    R               REFFLD(MOD#)
+                  ROSTAT    R               REFFLD(STAT)

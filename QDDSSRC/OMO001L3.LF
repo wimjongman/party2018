@@ -1,0 +1,32 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMO001L3                                      *
+      * Function ...: Contains records from object processing       *
+      * Author .....: G. Oei.                                       *
+      * Startdate ..: 28-09-1992.                                   *
+      *                                                             *
+      * A Member is added (and removed) by DMD001C                  *
+      * This member contains all objects that have to be            *
+      * distributed to other machines.                              *
+      * This Logical must be created with option                    *
+      *          MBR(*NONE) MAXMBR(*NOMAX)                          *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Record OMO001R
+      * ------------------------------------------------------------ *
+                R OMO001R                   PFILE(OMO001W3)
+
+      * ------------------------------------------------------------ *
+      * Key
+      * ------------------------------------------------------------ *
+                K W3JOB#
+                K W3APPC
+                K W3SEQ#
+                K W3FRPL
+                K W3TOPL
+                S W3LBLT                    VALUES('1' '2')

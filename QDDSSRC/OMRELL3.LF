@@ -1,0 +1,36 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMRELL3                                       *
+      * Function ...: Object relation file logical                  *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 10-04-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the object relation file *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMREL                                              *
+      * Record OMRELR                                               *
+      * ----------------------------------------------------------- *
+                                            UNIQUE
+                R OMRELR                    PFILE(OMREL)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * ELROBC      - Reference object code                         *
+      * ELROBL      - Reference object library                      *
+      * ELROBT      - Reference object type                         *
+      * ELOBJC      - Object code                                   *
+      * ELOBJL      - Object library                                *
+      * ELOBJT      - Object type                                   *
+      * ----------------------------------------------------------- *
+                K ELROBC
+                K ELROBL
+                K ELROBT
+                K ELOBJC
+                K ELOBJL
+                K ELOBJT

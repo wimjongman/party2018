@@ -1,0 +1,10 @@
+     FDEMOPF  IF  E           K        DISK
+     C*************************************************************
+     C*
+     C                     READ DEMOPF                   99
+     C*
+     C           FCODE     IFEQ *BLANK
+     C                     MOVE 'TEST'    FDESC
+     C                     ENDIF
+     C*
+     C                     SETON                     LR

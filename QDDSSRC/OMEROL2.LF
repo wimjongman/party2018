@@ -1,0 +1,35 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMEROL2                                       *
+      * Function ...: Solution detail file logical                  *
+      * Author .....: FRANCOIS VAN DE VIJFEIJKE                     *
+      * Startdate ..: 10-04-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the solution file        *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMERO
+      * Record OMEROR
+      * ------------------------------------------------------------ *
+
+                R OMEROR                    PFILE(OMERO)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * ROAPPC      - Application Code
+      * ROOBJC      - Object code
+      * ROOBJT      - Object type
+      * ROMBRC      - Member code
+      * Omit
+      * ROPDLC      - Object status = *CMP /*LOCK
+      * ------------------------------------------------------------ *
+                K ROAPPC
+                K ROOBJC
+                K ROOBJT
+                K ROMBRC
+                O ROSTAT                    VALUES('*CMP ' '*LOCK' '     ')

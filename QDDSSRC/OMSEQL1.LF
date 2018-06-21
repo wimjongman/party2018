@@ -1,0 +1,30 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMSEQL1                                       *
+      * Function ...: Security file logical.                        *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 16-01-1991.                                   *
+      *                                                             *
+      * This is the a logical access path over the security file.   *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMSEQ
+      * Record OMSEQR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMSEQR                    PFILE(OMSEQ)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * EQAPPC      - Application code
+      * EQPDLC      - Environment (or blanks)
+      * EQUSID      - User i.d. or user class
+      * ------------------------------------------------------------ *
+                K EQAPPC
+                K EQPDLC
+                K EQUSID

@@ -1,0 +1,30 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMERDL1                                       *
+      * Function ...: Request detail file logical                   *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 01-02-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the request detail file  *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMERD
+      * Record OMERDR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMERDR                    PFILE(OMERD)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * RDAPPC      - Application code
+      * RDERR#      - Request number
+      * RDSEQ#      - Sequence number
+      * ------------------------------------------------------------ *
+                K RDAPPC
+                K RDERR#
+                K RDSEQ#

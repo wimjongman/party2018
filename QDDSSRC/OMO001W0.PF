@@ -1,0 +1,58 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMO001W0                                      *
+      * Function ...: Object processing workfile                    *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 08-06-1991.                                   *
+      *                                                             *
+      * This file is a workfile of program OMO001.                  *
+      * This workfile is used to place the objects '*FILE/*PF' in   *
+      * top of the processing workfile.                             *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record OMCNMR
+      * ------------------------------------------------------------ *
+                R OMO001R
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  FMJOB#    R               REFFLD(JOB#)
+                  FMKEY          1A
+                  FMOBJL    R               REFFLD(OBJL)
+                  FMOBJC    R               REFFLD(OBJC)
+                  FMOBJT    R               REFFLD(OBJT)
+                  FMMBRC    R               REFFLD(MBRC)
+                  FMOBJA    R               REFFLD(OBJA)
+                  FMPDLC    R               REFFLD(PDLC)
+                  FMSTAT    R               REFFLD(STAT)
+                  FMOBD$    R               REFFLD(OBJD)
+                  FMEXCI    R               REFFLD(EXCI)
+                  FMOCLS    R               REFFLD(OCLS)
+                  FMSORD    R               REFFLD(SORD)
+                  FMSRCP    R               REFFLD(SRCP)
+                  FMFSRL    R               REFFLD(SRCL)
+                  FMFSRF    R               REFFLD(SRCF)
+                  FMFSRM    R               REFFLD(SRCM)
+                  FMSRCS    R               REFFLD(SRCS)
+                  FMSRCX    R               REFFLD(SRCX)
+                  FMOBJX    R               REFFLD(OBJX)
+                  FMPDL$    R               REFFLD(PDLC)
+                  FMAPP$    R               REFFLD(APPC)
+                  FMCNVI    R               REFFLD(CNVI)
+
+      * ------------------------------------------------------------ *
+      * Key
+      * ------------------------------------------------------------ *
+                K FMJOB#
+                K FMKEY

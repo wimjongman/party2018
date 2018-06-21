@@ -1,0 +1,35 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMOBJL5                                       *
+      * Function ...: Object file logical                           *
+      * Author .....: W.S. Jongman
+      * Startdate ..: 26-03-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the object file.         *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMOBJ                                              *
+      * Record OMOBJR                                               *
+      * ----------------------------------------------------------- *
+                R OMOBJR                    PFILE(OMOBJ)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * RJAPPC      - Application code                              *
+      * RJPDLC      - Production level code                         *
+      * RJOBJC      - Object code                                   *
+      * RJOBJT      - Object type                                   *
+      * RJOBJA      - Object attribute                              *
+      * RJERR#      - Last related fixnumber                        *
+      * ----------------------------------------------------------- *
+                K RJAPPC
+                K RJPDLC
+                K RJOBJC
+                K RJOBJT
+                K RJOBJA
+                K RJFIX#

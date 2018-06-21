@@ -1,0 +1,31 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMOBJL4                                       *
+      * Function ...: Object file logical                           *
+      * Author .....: Francois van de Vijfeijke
+      * Startdate ..: 26-03-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the object file.         *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMOBJ                                              *
+      * Record OMOBJR                                               *
+      * ----------------------------------------------------------- *
+                R OMOBJR                    PFILE(OMOBJ)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * RJAPPC      - Application code                              *
+      * RJOBJC      - Object code                                   *
+      * RJOBJT      - Object type                                   *
+      * RJPDLC      - Production level code                         *
+      * ----------------------------------------------------------- *
+                K RJAPPC
+                K RJOBJC
+                K RJOBJT
+                K RJPDLC

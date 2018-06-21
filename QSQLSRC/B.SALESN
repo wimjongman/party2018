@@ -1,0 +1,10 @@
+CREATE TABLE DOMSPR1DTA/"B.SALES" (
+--  SQL150B   10   REUSEDLT(*NO) in table "B.SALES" in DOMSPR1DTA ignored.
+  "KEY" CHAR(10) CCSID 37 NOT NULL DEFAULT '' ,
+  KEY2 CHAR(10) CCSID 37 NOT NULL DEFAULT '' ,
+  KEY3 CHAR(10) CCSID 37 NOT NULL DEFAULT '' )
+  RCDFMT SALESR     ;
+
+--  SQL7040   40   Message severity 10 exceeds specified severity level 0.
+--  SQL7046   40   Generate SQL for "B.SALES" in DOMSPR1DTA object type TABLE
+--                 failed.

@@ -1,0 +1,205 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMSREF                                        *
+      * Function ...: Object Management System Reference File       *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 16-01-1991.                                   *
+      * Last update : 22-03-1991.                                   *
+      * Updatenumber: 24                                            *
+      *                                                             *
+      * This is the field reference file of the object management   *
+      * system.                                                     *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Record OMSREFR
+      * ------------------------------------------------------------ *
+
+                R OMSREFR
+
+      * ------------------------------------------------------------ *
+      * Reference field descriptions
+      * ------------------------------------------------------------ *
+
+
+      * ------------------------------------------------------------ *
+      * AAAA
+      * ------------------------------------------------------------ *
+                  ADDR           8A         TEXT('User address, distribution')
+                  APNM          30A         TEXT('Application name         ')
+                  APPC           5A         TEXT('Application code         ')
+                  AUTC           1A         TEXT('Authorisation code       ')
+
+      * ------------------------------------------------------------ *
+      * CCCC
+      * ------------------------------------------------------------ *
+                  CNVS           1A         TEXT('Conversion Scope')
+                  CNVT           1A         TEXT('Conversion type')
+                  CNVI           1A         TEXT('Conversion Indication')
+                  CONM          50A         TEXT('Company name             ')
+
+      * ------------------------------------------------------------ *
+      * DDDD
+      * ------------------------------------------------------------ *
+                  DMPL          10A         TEXT('Dump library             ')
+                  DSTT           1A         TEXT('Distribution type        ')
+
+      * ------------------------------------------------------------ *
+      * EEEE
+      * ------------------------------------------------------------ *
+                  ERPR          10A         TEXT('User id of error manager ')
+                  ERR#          10A         TEXT('Error number             ')
+                  ERRD          70A         TEXT('Error description        ')
+                  EXCI           1A         TEXT('Must-Exist indicator     ')
+                  EPDT           6S 0       TEXT('Expected completion date ')
+                  ERDT           6S 0       TEXT('Realized completion date ')
+                  EPH#           5P 2       TEXT('Expected number of hours ')
+                  ERH#           5P 2       TEXT('Realized number of hours ')
+
+      * ------------------------------------------------------------ *
+      * FFFF
+      * ------------------------------------------------------------ *
+                  FREE          32A         TEXT('Free user space          ')
+                  FIX#          10A         TEXT('Fix number               ')
+                  FIXS           5A         TEXT('Fix status               ')
+                  FMTC          10A         TEXT('Screen format code       ')
+                  FNCC           5A         TEXT('Function code            ')
+
+      * ------------------------------------------------------------ *
+      * GGGG
+      * ------------------------------------------------------------ *
+                  GL4N          10A         TEXT('4-GL Name                ')
+
+      * ------------------------------------------------------------ *
+      * HHHH
+      * ------------------------------------------------------------ *
+                  HRS#           5P 2       TEXT('Number of hours          ')
+
+      * ------------------------------------------------------------ *
+      * IIII
+      * ------------------------------------------------------------ *
+                  INDI           1A         TEXT('General purpose indicator')
+                  INDT           6S 0       TEXT('Income date              ')
+                  INTM           6S 0       TEXT('Income time              ')
+                  INCR           2S 0       TEXT('Increment                ')
+
+      * ------------------------------------------------------------ *
+      * JJJJ
+      * ------------------------------------------------------------ *
+                  JOB#           6P 0       TEXT('Job number               ')
+                  JOBN          10A         TEXT('Job name                 ')
+
+      * ------------------------------------------------------------ *
+      * LLLL
+      * ------------------------------------------------------------ *
+                  LBLD          50A         TEXT('Library list description ')
+                  LBLT           1A         TEXT('Library list type')
+                  LIBC          10A         TEXT('Library code             ')
+                  LSQ#           3P 0       TEXT('Library sequence number  ')
+                  LVSC           7A         TEXT('Level selection code     ')
+                  LVS#           3P 0       TEXT('Level selection number   ')
+                  LEVI           1A         TEXT('Level indicator          ')
+
+      * ------------------------------------------------------------ *
+      * MMMM
+      * ------------------------------------------------------------ *
+                  MBRC          10A         TEXT('Member code              ')
+                  MBRA          10A         TEXT('Member attribute (MBSEU) ')
+                  MBRD          50A         TEXT('Member text              ')
+                  MSGT         120A         TEXT('Message text             ')
+                  MSGN           7A         TEXT('Message number           ')
+                  MSGF          10A         TEXT('Message file             ')
+                  MUTC          10A         TEXT('Mutation code            ')
+                  MSGD          80A         TEXT('Message data             ')
+                  MOD#           2  0       TEXT('Modification number      ')
+
+      * ------------------------------------------------------------ *
+      * OOOO
+      * ------------------------------------------------------------ *
+                  OBJC          10A         TEXT('Object code              ')
+                  OBJT           9A         TEXT('Object type              ')
+                  OBJA          10A         TEXT('Object attribute         ')
+                  OBJL          10A         TEXT('Object library           ')
+                  OBJD          50A         TEXT('Object description       ')
+                  OBJX          13A         TEXT('Object Source change date')
+                  OBTA         135A         TEXT('Object type array        ')
+                  OBAA         150A         TEXT('Object attribute array   ')
+                  OCDT           6S 0       TEXT('Occurence date           ')
+                  OCTM           6S 0       TEXT('Occurence time           ')
+                  OMOD           1A         TEXT('Object modified          ')
+                  OCRT          10A         TEXT('User which created object')
+                  OCLS           1A         TEXT('Object class             ')
+
+      * ------------------------------------------------------------ *
+      * PPPP
+      * ------------------------------------------------------------ *
+                  PERC           3P 0       TEXT('Percentage               ')
+                  PDLC           5A         TEXT('Production level code    ')
+                  PDLD          50A         TEXT('Prod. level description  ')
+                  PGMR          10A         TEXT('Programmer               ')
+                  PGML          10A         TEXT('Program library          ')
+                  PGMN          10A         TEXT('Program name             ')
+                  PRCI           1A         TEXT('Process indicator        ')
+                  PRIN           1A         TEXT('Priority numeric         ')
+                  PRIC           8A         TEXT('Priority Alphanumeric    ')
+                  PRID           1A         TEXT('Priority indicator Dflt. ')
+
+      * ------------------------------------------------------------ *
+      * RRRR
+      * ------------------------------------------------------------ *
+                  RMTH          40A         TEXT('Reorg. recommendation    ')
+                  ROBA          10A         TEXT('Related object attribute ')
+                  ROBT           9A         TEXT('Related object type      ')
+                  ROBL          10A         TEXT('Related object library   ')
+                  ROBC          10A         TEXT('Related object code      ')
+                  RPLC           5A         TEXT('Related production level ')
+                  REL#           1S 0       TEXT('Relation level           ')
+                  RLS#          10A         TEXT('Release                  ')
+
+      * ------------------------------------------------------------ *
+      * SSSS
+      * ------------------------------------------------------------ *
+                  SEQ#           5P 0       TEXT('Sequence number          ')
+                  SHED          50A         TEXT('Short error description  ')
+                  SHSD          50A         TEXT('Short solution descript. ')
+                  SORD          70A         TEXT('Solution/Remark descript.')
+                  SHOD          50A         TEXT('Short Sol.  description  ')
+                  STDT           6S 0       TEXT('Start date               ')
+                  SRCF          10A         TEXT('Source file              ')
+                  SRCL          10A         TEXT('Source library           ')
+                  SRCM          10A         TEXT('Source member            ')
+                  STAT           5A         TEXT('Status                   ')
+                  SYSC           1A         TEXT('Sys.rel. code 0=No 1=Yes ')
+                  SAVL          10A         TEXT('Save source library      ')
+                  SAVM          10A         TEXT('Save source member       ')
+                  SADT           6S 0       TEXT('Save date                ')
+                  SATM           6S 0       TEXT('Save time                ')
+                  SEVL           2  0       TEXT('Severity code Filter     ')
+                  SRCS           1A         TEXT('Sources belong to object ')
+                  SRCP           1A         TEXT('Source Processing        ')
+                  SRCX          13A         TEXT('Source Change date       ')
+
+      * ------------------------------------------------------------ *
+      * TTTT
+      * ------------------------------------------------------------ *
+                  TEL#          15A         TEXT('Telephone number         ')
+                  TXTT           1A         TEXT('Text type 1-rem. 2-sol.  ')
+                  TSQ#           5P 0       TEXT('Object type sequence nr. ')
+
+      * ------------------------------------------------------------ *
+      * UUUU
+      * ------------------------------------------------------------ *
+                  USDC          50A         TEXT('User description         ')
+                  USID          10A         TEXT('User i.d., or user class ')
+                  USRI           8A         TEXT('User i.d., for distribution')
+                  USDF           1A         TEXT('User defined               ')
+
+      * ------------------------------------------------------------ *
+      * VVVV
+      * ------------------------------------------------------------ *
+                  VIEI           1A         TEXT('Vieuw indicator          ')
+                  VRS#           2  0       TEXT('Version number           ')

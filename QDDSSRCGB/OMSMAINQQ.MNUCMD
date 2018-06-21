@@ -1,0 +1,8 @@
+OMSMAINQQ,1
+0001 go omssysm
+0002 go omsappm
+0003 go omsrqst
+0004 go omsexcp
+0005 go omsinfo
+0007 go omsasset
+0099 RESOMS

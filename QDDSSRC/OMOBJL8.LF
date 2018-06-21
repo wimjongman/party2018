@@ -1,0 +1,32 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMOBJL8                                       *
+      * Function ...: Object file logical                           *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 12-03-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the object file.         *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMOBJ                                              *
+      * Record OMOBJR                                               *
+      * ----------------------------------------------------------- *
+                                            UNIQUE
+                R OMOBJR                    PFILE(OMOBJ)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * RJOBJL      - Object library                                *
+      * RJOBJC      - Object code                                   *
+      * RJOBJT      - Object type                                   *
+      * RJOBJA      - Object attribute                              *
+      * ----------------------------------------------------------- *
+                K RJOBJL
+                K RJOBJC
+                K RJOBJT
+                K RJOBJA

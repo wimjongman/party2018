@@ -1,0 +1,36 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMOBJL2                                       *
+      * Function ...: Object file logical                           *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 14-03-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the object file.         *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMOBJ                                              *
+      * Record OMOBJR                                               *
+      * ----------------------------------------------------------- *
+                                            UNIQUE
+                R OMOBJR                    PFILE(OMOBJ)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * RJAPPC      - Application code                              *
+      * RJPDLC      - Production level code                         *
+      * RJOBJT      - Object type                                   *
+      * RJOBJC      - Object code                                   *
+      * RJOBJL      - Object library                                *
+      * RJOBJA      - Object attribute                              *
+      * ----------------------------------------------------------- *
+                K RJAPPC
+                K RJPDLC
+                K RJOBJT
+                K RJOBJC
+                K RJOBJL
+                K RJOBJA

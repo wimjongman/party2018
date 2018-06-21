@@ -1,0 +1,37 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMMBR                                         *
+      * Function ...: Member file.                                  *
+      * Author .....: G. Oei                                        *
+      * Startdate ..: 25-06-1992.                                   *
+      *                                                             *
+      * This file holds all the members for a specified object.     *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Reference file OMSREF
+      * ------------------------------------------------------------ *
+                                            REF(OMSREF)
+
+      * ------------------------------------------------------------ *
+      * Record OMOBJR
+      * ------------------------------------------------------------ *
+                R OMMBRR
+
+      * ------------------------------------------------------------ *
+      * Field descriptions
+      * ------------------------------------------------------------ *
+                  BROBJC    R               REFFLD(OBJC)
+                  BROBJL    R               REFFLD(OBJL)
+                  BRMBRC    R               REFFLD(MBRC)
+                  BRMBRA    R               REFFLD(MBRA)
+                  BRMBRD    R               REFFLD(MBRD)
+                  BRFIX#    R               REFFLD(FIX#)
+                  BROMOD    R               REFFLD(OMOD)
+                  BRUSDF    R               REFFLD(USDF)
+                  BREXCI    R               REFFLD(EXCI)
+                  BRFREE    R               REFFLD(FREE)

@@ -1,0 +1,6 @@
+     FOMOBJL7 IF  E           K        DISK
+     FOMRSRL1 IF  E           K        DISK
+     C                     READ OMOBJL7                  99
+     C                     READ OMRSRL1                  89
+     C                     SETON                     LR
+     C                     RETRN

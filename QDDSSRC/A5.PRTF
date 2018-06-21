@@ -1,0 +1,161 @@
+                R HEADER
+                                        1  1'OMA003  '
+      *
+      * -------------------------- *
+      * Company name
+      * -------------------------- *
+      *
+                  P#CONM    R        O  1 45REFFLD(CONM OMSREF)
+                                            TEXT('Company name')
+                                            HIGHLIGHT
+
+                                        1125DATE
+                                            EDTCDE(Y)
+
+                                        2 35MSGCON(70 MA00302 OMSDSP)
+
+                                        2  1'Pag.'
+                                          +1PAGNBR
+
+                                        2125TIME
+
+      *
+      * -------------------------- *
+      * This field is meant for
+      * underlining purposes only;
+      * it contains no data
+      * -------------------------- *
+      *
+                  UNDLIN       132      3  1UNDERLINE
+      *
+      * -------------------------- *
+      * Application code
+      * -------------------------- *
+      *
+                                        5  1MSGCON(25 APP0001 OMSDSP)
+
+                  PPAPPC    R           5 27REFFLD(OMSREFR/APPC *LIBL/OMSREF)
+      *
+                  PPAPNM    R           5 33REFFLD(OMSREFR/APNM *LIBL/OMSREF)
+
+      *
+      * -------------------------- *
+      * Production level code
+      * -------------------------- *
+      *
+                                        6  1MSGCON(25 PDL0003 OMSDSP)
+
+                  P#PDLC    R           6 27REFFLD(OMSREFR/PDLC *LIBL/OMSREF)
+      *
+                  W#PDLD    R           6 33REFFLD(OMSREFR/PDLD *LIBL/OMSREF)
+
+      *
+      * -------------------------- *
+      * Report header
+      * -------------------------- *
+      *
+                                        8  1MSGCON(132 MA00304 OMSDSP)
+                                        9  1MSGCON(132 MA00303 OMSDSP)
+                                            UNDERLINE
+                                       10  1' '
+
+      * ----------------------------------------------------------- *
+      * Unfindable object names and sources                         *
+      * ----------------------------------------------------------- *
+                R LINE                      SPACEB(1)
+      *
+      * -------------------------- *
+      * Object
+      * -------------------------- *
+      *
+                  W#OBNM    R              1REFFLD(OMSREFR/OBJC *LIBL/OMSREF)
+                                            HIGHLIGHT
+      *
+      * -------------------------- *
+      * Library
+      * -------------------------- *
+      *
+                  W#LBNM    R             12REFFLD(OMSREFR/LIBC *LIBL/OMSREF)
+                                            HIGHLIGHT
+
+      *
+      * -------------------------- *
+      * Object type
+      * -------------------------- *
+      *
+                  W#OBTP         8        23HIGHLIGHT
+
+      *
+      * -------------------------- *
+      * Object attribute
+      * -------------------------- *
+      *
+                  W#OBAT        10        32HIGHLIGHT
+      *
+      * -------------------------- *
+      * Source file
+      * -------------------------- *
+      *
+                  W#SRCF    R             43REFFLD(OMSREFR/SRCF *LIBL/OMSREF)
+                                            HIGHLIGHT
+      *
+      * -------------------------- *
+      * Source member
+      * -------------------------- *
+
+                  W#SRCM    R             54REFFLD(OMSREFR/SRCM *LIBL/OMSREF)
+                                            HIGHLIGHT
+      *
+      * -------------------------- *
+      * New Source Library
+      * -------------------------- *
+      *
+                  W#NEWL    R             65REFFLD(OMSREFR/SRCL *LIBL/OMSREF)
+
+      *
+      * -------------------------- *
+      * Object Status New
+      * -------------------------- *
+      *
+                  W#NEWT        10        76HIGHLIGHT
+
+      *
+      * -------------------------- *
+      * Old Source Library
+      * -------------------------- *
+      *
+                  W#OLDL    R             87REFFLD(OMSREFR/SRCL *LIBL/OMSREF)
+
+      *
+      * -------------------------- *
+      * Object Status Old
+      * -------------------------- *
+      *
+                  W#OLDT        10        98HIGHLIGHT
+
+      *
+      * -------------------------- *
+      * Nearest Older Source Library
+      * -------------------------- *
+      *
+                  W#LOWL    R            109REFFLD(OMSREFR/SRCL *LIBL/OMSREF)
+
+      *
+      * -------------------------- *
+      * Nearest Older Source Library
+      * -------------------------- *
+      *
+                  W#HIGL    R            120REFFLD(OMSREFR/SRCL *LIBL/OMSREF)
+
+      * ----------------------------------------------------------- *
+      * End of report line                                          *
+      * ----------------------------------------------------------- *
+                R END                       SPACEB(2)
+
+      *
+      * -------------------------- *
+      * End of report
+      * -------------------------- *
+      *
+                                          35MSGCON(80 END0001 OMSDSP)
+

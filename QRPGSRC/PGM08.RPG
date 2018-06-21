@@ -1,0 +1,15 @@
+     FOMOBJL4 IF  E           K        DISK
+     FOMRELL3 IF  E           K        DISK
+     FOMRSRJ3 IF  E           K        DISK
+     FOMDMP   IF  E           K        DISK
+     FOMEOD   IF  E           K        DISK
+     FOMERD   IF  E           K        DISK
+     FOMERO   IF  E           K        DISK
+     C                     READ OMOBJL4                  99
+     C                     READ OMRELL3                  99
+     C                     READ OMRSRJ3                  99
+     C                     READ OMDMP                    99
+     C                     READ OMEOD                    99
+     C                     READ OMERD                    99
+     C                     READ OMERO                    99
+     C                     SETON                     LR

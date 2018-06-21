@@ -1,0 +1,31 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMESDL1                                       *
+      * Function ...: Solution detail file logical                  *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 01-02-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the solution file.       *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMESD
+      * Record OMESDR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMESDR                    PFILE(OMESD)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * SDAPPC      - Application code
+      * SDRLS#      - Release number
+      * SDFIX#      - Fix number
+      * SDSEQ#      - Sequence number
+      * ------------------------------------------------------------ *
+                K SDAPPC
+                K SDFIX#
+                K SDSEQ#

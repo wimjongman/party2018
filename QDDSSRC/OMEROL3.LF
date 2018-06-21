@@ -1,0 +1,37 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMEROL3                                       *
+      * Function ...: Solution detail file logical                  *
+      * Author .....: PETER WORTEL                                  *
+      * Startdate ..: 12-11-1992.                                   *
+      *                                                             *
+      * This is a logical access path over the solution file        *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMERO
+      * Record OMEROR
+      * ------------------------------------------------------------ *
+
+                R OMEROR                    PFILE(OMERO)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * ROAPPC      - Application Code
+      * ROOBJC      - Object code
+      * ROOBJT      - Object type
+      * ROVRS#      - Version number    descending
+      * ROMOD#      - Modification nr   descending
+      * Select
+      * ROSTAT      - Object status = *CMP
+      * ------------------------------------------------------------ *
+                K ROAPPC
+                K ROOBJC
+                K ROOBJT
+                K ROVRS#                    DESCEND
+                K ROMOD#                    DESCEND
+                S ROSTAT                    VALUES('*CMP ')

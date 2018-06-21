@@ -1,0 +1,16 @@
+     FOMOBJL8 IF  E           K        DISK
+     FOMRSRL2 IF  E           K        DISK
+     FOMPDL   IF  E           K        DISK
+     FOMPRI   IF  E           K        DISK
+     FOMPWH   IF  E           K        DISK
+     FOMREL   IF  E           K        DISK
+     FOMSEQ   IF  E           K        DISK
+     C                     READ OMOBJL8                  99
+     C                     READ OMRSRL2                  99
+     C                     READ OMPDL                    99
+     C                     READ OMPRI                    99
+     C                     READ OMPWH                    99
+     C                     READ OMREL                    99
+     C                     READ OMSEQ                    99
+     C                     CALL 'QUSLMBR'
+     C                     SETON                     LR

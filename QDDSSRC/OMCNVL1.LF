@@ -1,0 +1,32 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMCNVL1                                       *
+      * Function ...: Conversion file logical                       *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 25-01-1991.                                   *
+      *                                                             *
+      * This is a logical access path on the conversion file        *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMCNV
+      * Record OMCNVR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMCNVR                    PFILE(OMCNV)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * NVAPPC      - Application code
+      * NVOBJC      - Object code
+      * NVOBJT      - Object type
+      * NVMBRC      - Member code
+      * ------------------------------------------------------------ *
+                K NVAPPC
+                K NVOBJC
+                K NVOBJT
+                K NVMBRC

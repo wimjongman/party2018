@@ -1,0 +1,28 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMDMPL1                                       *
+      * Function ...: Dumped sources location file logical          *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 11-09-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the dumped sources file  *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMDMP
+      * Record   OMDMPR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMDMPR                    PFILE(OMDMP)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * MPAPPC      - Application code
+      * MPSAVM      - Save source member
+      * ------------------------------------------------------------ *
+                K MPAPPC
+                K MPSAVM

@@ -1,0 +1,167 @@
+     A* Free Form Menu: OMSMAIN
+     A*%%TS  SD  19930302  113408  WIM         REL-V2R2M0  5738-PW1
+     A*  91/05/16  10:55:12    EWOUT       REL-R03M00  5728-PW1
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+     A                                      CHGINPDFT
+     A                                      INDARA
+     A                                      PRINT(*LIBL/QSYSPRT)
+     A*  91/03/27  12:36:22    WIM         REL-R03M00  5728-PW1
+     A          R OMSMAIN
+     A*%%TS  SD  19930302  113408  WIM         REL-V2R2M0  5738-PW1
+     A                                      DSPMOD(*DS3)
+     A                                      LOCK
+     A                                      SLNO(01)
+     A                                      CLRL(*ALL)
+     A                                      ALWROL
+     A                                      CF03
+     A                                      HELP
+     A                                      HOME
+     A                                      HLPRTN
+     A                                  1  2'OMSMAIN'
+     A                                      COLOR(BLU)
+     A                                  1 32'OMS Main Menu'
+     A                                      DSPATR(HI)
+     A                                  3  2'Select one of the following:'
+     A                                      COLOR(BLU)
+     A                                  5  7'1.'
+     A                                  6  7'2.'
+     A                                  7  7'3.'
+     A* CMDPROMPT  Do not delete this DDS spec.
+     A                                019  2'Selection or command              -
+     A                                          '
+     A                                  5 10'System'
+     A                                  5 17'Management'
+     A                                  6 10'Application'
+     A                                  6 22'Management'
+     A                                  7 10'Request'
+     A                                  7 18'Management'
+     A                                 14  6'99.'
+     A                                 14 10'Reset'
+     A                                 14 16'OMS'
+     A                                 14 53'(RESOMS)'
+     A                                  9  7'5. Inquiry and Reports'
+     A                                  8  7'4. Exception Management'
+     A                                  2 62'System:'
+     A                                  2 72SYSNAME
+     A          R #H0000
+     A*%%TS  SD  19911008  101909  PETER       REL-V2R1M0  5738-PW1
+     A                                      TEXT('General Help for Menu OMSMAIN-
+     A                                      ')
+     A                                      CLRL(*ALL)
+     A                                  1  2'HELP'
+     A                                      COLOR(BLU)
+     A                                  1 26'General Help for Menu OMSMAIN'
+     A                                      DSPATR(HI)
+     A                                  5  2'This is the main menu of the Objec-
+     A                                      t Management System. From this menu-
+     A                                       you can   choose the basic system -
+     A                                      functions. Each menu option takes y-
+     A                                      ou to another menu'
+     A                                  9  2'To get more help concerning the di-
+     A                                      fferent options, type the number of-
+     A                                       the       option on the command li-
+     A                                      ne and press the HELP-key.'
+     A                                  7  2'from which you can start different-
+     A                                       OMS-programs.'
+     A*  91/05/16  10:55:12    EWOUT       REL-R03M00  5728-PW1
+     A          R #H0101
+     A*%%TS  SD  19911008  101909  PETER       REL-V2R1M0  5738-PW1
+     A                                      TEXT('Help for Menu Option 01')
+     A                                      CLRL(*ALL)
+     A                                  1  2'HELP'
+     A                                      COLOR(BLU)
+     A                                  1 29'Help for Menu Option 1 '
+     A                                      DSPATR(HI)
+     A                                  5  2'Choose this option to define certa-
+     A                                      in system parameters. Choosing the -
+     A                                      option     takes you to another men-
+     A                                      u from which you can choose to chan-
+     A                                      ge the company       name, the defi-
+     A                                      nition of applications or reorganiz-
+     A                                      ing the OMS physical files.'
+     A                                  9  2'Only users with userclass *SECOFR -
+     A                                      or *SECADM are allowed to use these-
+     A                                       functions'
+     A*  91/05/16  10:55:12    EWOUT       REL-R03M00  5728-PW1
+     A          R #H0202
+     A*%%TS  SD  19911008  101909  PETER       REL-V2R1M0  5738-PW1
+     A                                      TEXT('Help for Menu Option 02')
+     A                                      CLRL(*ALL)
+     A                                  1  2'HELP'
+     A                                      COLOR(BLU)
+     A                                  1 29'Help for Menu Option 2 '
+     A                                      DSPATR(HI)
+     A                                  5  2'Choose this option to maintain the-
+     A                                       system on application level. Choos-
+     A                                      ing the    option takes you to anot-
+     A                                      her menu, from which you can choose-
+     A                                       to maintain the     security, the -
+     A                                      definition of environments, filling-
+     A                                       and maintenance of the object file-
+     A                                      , filling and maintenance of the re-
+     A                                      lation file, and start a system che-
+     A                                      ck    report.'
+     A*  91/05/16  10:55:12    EWOUT       REL-R03M00  5728-PW1
+     A          R #H0303
+     A*%%TS  SD  19911008  101909  PETER       REL-V2R1M0  5738-PW1
+     A                                      TEXT('Help for Menu Option 03')
+     A                                      CLRL(*ALL)
+     A                                  1  2'HELP'
+     A                                      COLOR(BLU)
+     A                                  1 29'Help for Menu Option 3 '
+     A                                      DSPATR(HI)
+     A                                  5  2'Choose this option for the actual -
+     A                                      definition of requests (i.e. fixes,-
+     A                                       solution proposals, solution descr-
+     A                                      iption) or to start object processi-
+     A                                      ng (i.e. moving     objects between-
+     A                                       environments).'
+     A*  91/05/16  10:55:12    EWOUT       REL-R03M00  5728-PW1
+     A          R #H0404
+     A*%%TS  SD  19930203  160324  WIM         REL-V2R2M0  5738-PW1
+     A                                      TEXT('Help for Menu Option 04')
+     A                                      CLRL(*ALL)
+     A                                  1  2'HELP'
+     A                                      COLOR(BLU)
+     A                                  1 29'Help for Menu Option 4 '
+     A                                      DSPATR(HI)
+     A                                  5  2'Choose this option to define the y-
+     A                                      our fix processing exceptions. It w-
+     A                                      ill take   you to another menu wher-
+     A                                      e you can start the exception defin-
+     A                                      ition programs.'
+     A          R #H0505
+     A*%%TS  SD  19930203  160324  WIM         REL-V2R2M0  5738-PW1
+     A                                      TEXT('Help for Menu Option 05')
+     A                                      CLRL(*ALL)
+     A                                  1  2'HELP'
+     A                                      COLOR(BLU)
+     A                                  1 29'Help for Menu Option 4 '
+     A                                      DSPATR(HI)
+     A                                  5  2'Choose this option to perform syst-
+     A                                      em inquiries. Choosing the option t-
+     A                                      akes you   to another menu, from wh-
+     A                                      ich you can choose to generate a du-
+     A                                      plicate object       report, or per-
+     A                                      form an interactive inquiry on erro-
+     A                                      rs or open errors. '
+     A*  91/05/16  10:55:12    EWOUT       REL-R03M00  5728-PW1
+     A          R #H9999
+     A*%%TS  SD  19911008  101909  PETER       REL-V2R1M0  5738-PW1
+     A                                      TEXT('Help for Menu Option 99')
+     A                                      CLRL(*ALL)
+     A                                  1  2'HELP'
+     A                                      COLOR(BLU)
+     A                                  1 29'Help for Menu Option 99'
+     A                                      DSPATR(HI)
+     A                                  5  2'Choose this option to reset the sy-
+     A                                      stem. When you have made changes to-
+     A                                       for       instance the company nam-
+     A                                      e file, you must first reset the sy-
+     A                                      stem to have the     new company na-
+     A                                      me displayed on the screens of OMS.'
+     A                                  8  2'Likewise, when you want to switch -
+     A                                      to another application, you first h-
+     A                                      ave to     choose the reset option.'

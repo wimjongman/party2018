@@ -1,0 +1,33 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMLBDL1                                       *
+      * Function ...: Library list detail file logical              *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 25-01-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the library list detail  *
+      * file.                                                       *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMLBD
+      * Record OMLBDR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMLBDR                    PFILE(OMLBD)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * BDAPPC      - Application code
+      * BDPDLC      - Production level code
+      * BDSEQ#      - Sequence number
+      * BDLIBC      - Library
+      * ------------------------------------------------------------ *
+                K BDAPPC
+                K BDPDLC
+                K BDSEQ#
+                K BDLSQ#

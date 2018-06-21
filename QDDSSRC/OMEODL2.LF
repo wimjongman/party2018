@@ -1,0 +1,36 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMEODL2                                       *
+      * Function ...: Solution detail file logical (input)          *
+      * Author .....: G. Oei.                                       *
+      * Startdate ..: 26-06-1992.                                   *
+      *                                                             *
+      * This is a logical access path over the solution detail file *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ------------------------------------------------------------ *
+      * Physical OMEOD
+      * Record OMEODR
+      * ------------------------------------------------------------ *
+                                            UNIQUE
+                R OMEODR                    PFILE(OMEOD)
+
+      * ------------------------------------------------------------ *
+      * Access path
+      * ROAPPC      - Application code
+      * ROFIX#      - Fix number
+      * ROOBJC      - Object code
+      * ROOBJT      - Object type
+      * ROMBRC      - Member code
+      * ROSEQ#      - Sequence number
+      * ------------------------------------------------------------ *
+                K ODAPPC
+                K ODFIX#
+                K ODOBJC
+                K ODOBJT
+                K ODMBRC
+                K ODSEQ#

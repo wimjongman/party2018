@@ -1,0 +1,29 @@
+
+      * ----------------------------------------------------------- *
+      * Description                                                 *
+      * ----------------------------------------------------------- *
+      *                                                             *
+      * File .......: OMOBJL7                                       *
+      * Function ...: Object file logical                           *
+      * Author .....: W.S. Jongman.                                 *
+      * Startdate ..: 17-08-1991.                                   *
+      *                                                             *
+      * This is a logical access path over the object file.         *
+      *                                                             *
+      * ----------------------------------------------------------- *
+
+      * ----------------------------------------------------------- *
+      * Physical OMOBJ                                              *
+      * Record OMOBJR                                               *
+      * ----------------------------------------------------------- *
+                R OMOBJR                    PFILE(OMOBJ)
+
+      * ----------------------------------------------------------- *
+      * Access path                                                 *
+      * RJSRCF      - Source file                                   *
+      * RJSRCL      - Source library                                *
+      * RJSRCM      - Source member                                 *
+      * ----------------------------------------------------------- *
+                K RJSRCF
+                K RJSRCL
+                K RJSRCM
